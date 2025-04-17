@@ -1,39 +1,39 @@
 # 📦 Folder: data/
 
-Folder ini menyimpan dataset mentah dan hasil pengolahan yang digunakan dalam analisis segmentasi pelanggan.
+This folder contains the raw dataset and processed output used in the customer segmentation analysis.
 
-## 📁 Isi Folder
+## 📁 Folder Contents
 
 ### 1. `online_retail.csv`
 
-- Dataset transaksi penjualan dari toko ritel daring.
-- Sumber: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/online+retail) atau Kaggle.
+- Sales transaction dataset from an online retail store.
+- Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/online+retail) or Kaggle.
 
-**Contoh Kolom:**
+**Sample Columns:**
 
-- `InvoiceNo`: ID transaksi
-- `StockCode`: ID produk
-- `Description`: Deskripsi produk
-- `Quantity`: Jumlah barang
-- `InvoiceDate`: Tanggal transaksi
-- `UnitPrice`: Harga per item
-- `CustomerID`: ID pelanggan
-- `Country`: Negara pelanggan
+- `InvoiceNo`: Transaction ID  
+- `StockCode`: Product ID  
+- `Description`: Product description  
+- `Quantity`: Number of items  
+- `InvoiceDate`: Transaction date  
+- `UnitPrice`: Price per item  
+- `CustomerID`: Customer ID  
+- `Country`: Customer’s country  
 
 ### 2. `rfm_segmented.csv`
 
-- Dataset hasil pengolahan RFM dan klasterisasi.
+- Dataset after RFM processing and clustering.
 
-**Contoh Kolom:**
+**Sample Columns:**
 
-- `CustomerID`
-- `Recency`
-- `Frequency`
-- `Monetary`
-- `Cluster`: Hasil clustering KMeans
-- `Segment`: Label segmen pelanggan (misal: Loyal, At Risk, New, dll)
+- `CustomerID`  
+- `Recency`  
+- `Frequency`  
+- `Monetary`  
+- `Cluster`: KMeans clustering result  
+- `Segment`: Segment label (e.g., Loyal, At Risk, New, etc.)
 
-  # 📁 data/
+## 📁 data/
 
 This folder contains all the datasets used in the project.
 
@@ -46,13 +46,13 @@ This folder contains all the datasets used in the project.
   Contains the final RFM scores and cluster labels for each customer after segmentation.
 
 ## Usage
+
 You can load these datasets using pandas:
 
 ```python
 import pandas as pd
 raw_data = pd.read_csv("data/online_retail.csv")
 rfm_data = pd.read_csv("data/rfm_segmented.csv")
-```
 
 Make sure to run all preprocessing steps in the notebook or script before using `rfm_segmented.csv`.
 
