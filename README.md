@@ -1,46 +1,46 @@
 # 🧠 RFM Customer Segmentation with KMeans
 
-Segmentasi pelanggan menggunakan analisis RFM (Recency, Frequency, Monetary) dan algoritma KMeans Clustering untuk mengidentifikasi perilaku pelanggan dan memberikan insight strategis untuk bisnis ritel atau e-commerce.
+Customer segmentation using RFM analysis (Recency, Frequency, Monetary) and KMeans Clustering algorithm to identify customer behavior and provide strategic insights for retail or e-commerce businesses.
 
 ---
 
-## 📌 Tujuan Proyek
+## 📌 Project Objectives
 
-- Mengelompokkan pelanggan berdasarkan kebiasaan belanja mereka.
-- Menyediakan insight untuk meningkatkan retensi, loyalitas, dan personalisasi kampanye.
-- Memberikan visualisasi dan interpretasi segmen pelanggan.
+- Group customers based on their shopping behavior.
+- Provide insights to improve retention, loyalty, and campaign personalization.
+- Deliver visualizations and interpretation of customer segments.
 
 ---
 
-## 🔍 Metodologi
+## 🔍 Methodology
 
 1. **Data Preparation**
-   - Pembersihan data, menghapus nilai kosong dan transaksi tidak valid.
+   - Data cleaning, removing null values and invalid transactions.
 
 2. **Feature Engineering**
-   - Perhitungan nilai Recency, Frequency, dan Monetary dari transaksi pelanggan.
+   - Calculating Recency, Frequency, and Monetary values from customer transactions.
 
-3. **Normalisasi dan Clustering**
-   - Standardisasi data RFM.
-   - KMeans Clustering dengan pencarian jumlah klaster optimal (Elbow Method & Silhouette Score).
+3. **Normalization and Clustering**
+   - Standardizing the RFM data.
+   - KMeans Clustering with optimal cluster number search (Elbow Method & Silhouette Score).
 
-4. **Visualisasi dan Interpretasi**
-   - Visualisasi klaster dengan PCA.
-   - Profiling dan pemberian label segmen seperti "Loyal Customers", "At Risk", dll.
+4. **Visualization and Interpretation**
+   - Cluster visualization with PCA.
+   - Profiling and labeling segments like "Loyal Customers", "At Risk", etc.
 
 5. **Output**
-   - Dataset tersegmentasi.
-   - Insight bisnis dari setiap kelompok pelanggan.
+   - Segmented dataset.
+   - Business insights from each customer group.
 
 ---
 
-## 🛠️ Tools dan Library
+## 🛠️ Tools and Libraries
 
 - Python
 - pandas, numpy
 - matplotlib, seaborn
 - scikit-learn (KMeans, PCA)
-- Streamlit (opsional untuk dashboard interaktif)
+- Streamlit (optional for interactive dashboard)
 
 ---
 
@@ -60,21 +60,18 @@ rfm-customer-segmentation/
 └── requirements.txt
 ```
 
----
+## 📈 Example Insights
 
-## 📈 Contoh Insight
-
-- **Loyal Customers**: RFM rendah, frekuensi tinggi, spending besar.
-- **New Customers**: Baru bertransaksi, potensi untuk diloyalkan.
-- **At Risk**: Lama tidak belanja, butuh reaktivasi.
+- **Loyal Customers**: Low recency, high frequency, large spending.
+- **New Customers**: Recently made purchases, potential for loyalty.
+- **At Risk**: Haven't purchased in a while, need reactivation.
 
 ---
 
-## 🚀 Pengembangan Selanjutnya
+## 🚀 Future Developments
 
-- Integrasi rekomendasi produk berbasis segmen.
-- Deployment dashboard interaktif dengan Streamlit.
-- Segmentasi lanjutan dengan model unsupervised lain (DBSCAN, HDBSCAN).
-
+- Integrate product recommendations based on segments.
+- Deploy interactive dashboard using Streamlit.
+- Advanced segmentation with other unsupervised models (DBSCAN, HDBSCAN).
 
 
