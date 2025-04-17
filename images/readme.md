@@ -11,12 +11,14 @@ This folder stores all visualization images generated during analysis and for pr
   A set of boxplots comparing Recency, Frequency, and Monetary values across segments.
 
 ## Usage
+
 These images are used in:
 - Jupyter Notebook reports
 - Streamlit dashboard app
 - README or presentation materials
 
 You can load them into your report using:
+
 ```python
 from PIL import Image
 from IPython.display import display
